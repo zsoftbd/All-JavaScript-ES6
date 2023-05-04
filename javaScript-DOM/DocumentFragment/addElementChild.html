@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddElementChild</title>
+</head>
+
+<body>
+
+    <div id="myDiv">
+        <h2>Hello this is zeaul1</h2>
+        <h2>Hello this is zeaul2</h2>
+        <h2>Hello this is zeaul3</h2>
+        <h2>Hello this is zeaul4</h2>
+        <h2>Hello this is zeaul5</h2>
+        <h2>Hello this is zeaul6</h2>
+    </div>
+    <script>
+        let myDiv = document.querySelector('#myDiv');
+        let li1 = document.createElement('li');
+        li1.textContent = 'Home';
+        let li2 = document.createElement('li');
+        li2.textContent = 'About';
+        myDiv.replaceChild(li1, myDiv.lastElementChild)
+        myDiv.replaceChild(li2, myDiv.firstElementChild)
+    </script>
+
+</body>
+
+</html>
