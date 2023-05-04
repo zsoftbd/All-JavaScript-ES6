@@ -1,0 +1,5 @@
+ style property – get or set inline styles of an element.
+ getComputedStyle() – return the computed style of an element.
+ className property – return a list of space-separated CSS classes.
+ classList property – manipulate CSS classes of an element.
+ Element’s width & height – get the width and height of an element.
