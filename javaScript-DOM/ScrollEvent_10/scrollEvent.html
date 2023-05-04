@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p>Lorem ipsum dolor sit amet i have to add more text with this pragraph!</p>
+    <script>
+        // window.onscroll=()=>{
+        // alert('your window scrolled')
+        // }
+        // window.addEventListener('scroll',()=>{
+        // console.log('you scroll the window')
+        // })
+        let scroller = 0;
+        window.addEventListener('scroll', () => {
+            let newScroller = window.scrollYOffset || document.documentElement.scrollTop;
+            if (newScroller > scroller) {
+                console.log('scroll down')
+            } else {
+                console.log('scroll up')
+            }
+            scroller = newScroller;
+        })
+    </script>
+</body>
+
+</html>

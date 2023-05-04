@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button id="btn1" onclick="myBtn()">Button</button>
+    <button id="btn2" onclick="myBtn()">Button</button>
+    <script>
+        // dom 0 lavel handelar
+        let btn1 = document.querySelector('#btn1');
+        btn1.onclick = function () {
+            alert('this is don o lavel handelar')
+        }
+        // dom 2 lavel handelar
+        let btn2 = document.querySelector("#btn2");
+        btn2.addEventListener('click', function (e) {
+            alert("hello this is dom event 2")
+        })
+    </script>
+
+</body>
+
+</html>
