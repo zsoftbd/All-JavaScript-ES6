@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecting elements</title>
+</head>
+<body>
+    <!-- Selecting elements -->
+    <button onclick="myfunction()">click me</button>
+    <p id="damo"></p>
+    <button onclick="date()">what's the time</button>
+
+<script> 
+
+function myfunction() {
+var element = document.getElementById("damo").innerHTML='hello i m js dom';
+      }
+
+function date(){
+document.getElementById("damo").innerHTML=Date();
+}
+</script>
+<hr>
+<hr>
+<p id="ID">A paragraph 1 </p>
+<p class="myclass">A paragraph 2</p>
+<p name="myClass1">A paragraph 3</p>
+<p name="myClass1">A paragraph 3</p>
+<p id="quaryselector"></p>
+<h2>hello this is tag name tsg </h2>
+<h3 id="ID1">hello this is tag name 1</h2>
+<h3 id="ID1">hello this is tag name 2</h2>
+<h3 id="ID1">hello this is tag name 3</h2>
+<h3 id="ID1">hello this is tag name 4</h2>
+<button onclick='alert("hi how are you")'>click me</button>
+<script> 
+// this is id
+let ID = document.getElementById('ID');
+ID.innerHTML='This is ID';
+//this is className
+let myclass = document.getElementsByClassName('myclass')[0];
+myclass.innerHTML='This is class2';
+//this is class
+let myClass1=document.getElementsByName('myClass1')[0];
+myClass1.innerHTML='This is class1';
+//this is tagName 
+let h2=document.getElementsByTagName('h2')[2];
+h2.innerHTML='Tag name i m changing tag ';
+//this is quaryselactor
+document.querySelector('#ID1');
+document.querySelectorAll('#ID1'); 
+</script>
+
+</body>
+</html>
