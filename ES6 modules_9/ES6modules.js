@@ -1,0 +1,1 @@
+export let newMassage='hay hello this is javaScript modules';
