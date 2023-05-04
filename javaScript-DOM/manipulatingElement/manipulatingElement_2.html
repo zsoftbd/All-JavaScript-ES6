@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <ul id="menu">
+        <li>Home</li>
+    </ul>
+    <script>
+        let menu=document.querySelector('#menu');
+        function createMenu(name){
+            let li=document.createElement('li');
+            li.textContent=name;
+            return li;
+        }
+        menu.appendChild(createMenu('About'))
+        menu.appendChild(createMenu('Blog'))
+        menu.appendChild(createMenu('Contact'))
+
+        // let menu = document.querySelector('#menu');
+        // function createMenu(name) {
+        //     let li = document.createElement('li');
+        //     li.textContent = name;
+        //     return li
+        // }
+        // menu.appendChild(createMenu('About'));
+        // menu.appendChild(createMen('Page'));
+        // menu.appendChild(createMenu('Contact'));
+        // menu.appendChild(createMenu('Blog')) 
+    </script>
+
+</body>
+
+</html>

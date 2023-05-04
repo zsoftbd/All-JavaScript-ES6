@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<ul class="menu"></ul>
+<script>
+let myMenu=document.querySelector(".menu");
+let lenguages=['JavaScript','Python',"Java",'PHP',"Go"]
+let fragment=new DocumentFragment();
+lenguages.forEach((lenguage)=>{
+    let li=document.createElement("li");
+    li.innerHTML=lenguage;
+    fragment.appendChild(li)
+})
+myMenu.appendChild(fragment);
+
+// let mymenu=document.querySelector('.menu')
+// let lenguages=['java','javaScript','pythin','go','php']
+// let fragment=new DocumentFragment();
+// lenguages.forEach((lenguage)=>{
+// let li=document.createElement('li')
+// li.innerHTML=lenguage;
+// fragment.appendChild(li)
+// })
+// mymenu.appendChild(fragment)
+
+</script>
+</body>
+</html>
